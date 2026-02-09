@@ -15,7 +15,7 @@
 }
 
 body {
-    color: var(--fundo);
+    background-color: var(--fundo);
 }
 
 .nav-container {
@@ -136,6 +136,7 @@ body {
     text-align: center;
     line-height: 16px;
     padding-top: 8px;
+    color: var(--texto);
 }
 
 .section-products {
@@ -150,7 +151,10 @@ body {
     color: var(--realce);
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
-    font-weight: 900;
+}
+
+.section-products-title h2 {
+    font-weight: 800;
 }
 
 .section-cards-products {
@@ -158,6 +162,8 @@ body {
     justify-content: space-between;
     width: 100%;
     max-width: 1440px;
+    position: relative;
+    align-items: center;
 }
 
 .card-product-img {
@@ -201,6 +207,255 @@ body {
     border-radius: 32px;
     padding: 0 16px;
 }
+
+.plantas-pendentes {
+    margin-top: 88px;
+}
+
+.arrow-section-products {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    left: -52px;
+    rotate: -180deg;
+    margin-bottom: 32px;
+
+    path {
+        stroke: #2D4739 !important;
+    }
+
+    &:last-child {
+        right: -52px;
+        left: auto;
+        rotate: 0deg;
+    }
+}
+
+.kit-section {
+    background-color: var(--primario);
+    margin-top: 88px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+    width: 100%;
+}
+
+.kit-title {
+    color: var(--texto);
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    margin-bottom: 40px;
+
+    h2 {
+        font-weight: 800;
+    }
+}
+
+.kit-content {
+    display: flex;
+    align-items: center;
+    gap: 88px;
+}
+
+.card-kit-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 15px;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-150%);
+}
+
+.arrow:first-child {
+    left: -4px;
+}
+
+.arrow:last-child {
+    right: -4px;
+}
+
+.plus-sign {
+    font-size: 90px;
+    color: var(--texto);
+    font-family: "Poppins", sans-serif;
+    margin: 0 10px;
+    padding-bottom: 80px;
+    justify-content: center;
+}
+
+.kit-product {
+    background-color: var(--secondario);
+    border-radius: 20px;
+    width: 260px;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.kit-product img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.kit-info {
+    color: var(--realce);
+    text-align: center;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 8px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.suculentas {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 88px;
+}
+
+.hands-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+
+}
+
+.hands-button button {
+    background-color: var(--realce);
+    color: var(--texto);
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    border: none;
+    border-radius: 50px;
+    padding: 74px 63px;
+    cursor: pointer;
+}
+
+.depoiment {
+    display: flex;
+    flex-direction: column;
+    padding: 88px 20px 32px 0px;
+    max-width: 1440px;
+    margin: 180px auto;
+}
+
+.depoiment-title {
+    display: flex;
+    color: var(--realce);
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    margin-bottom: 24px;
+    font-weight: 900;
+    justify-content: center;
+
+    h2 {
+        font-weight: 800;
+        margin-bottom: 16px;
+    }
+}
+
+.todos-dep-container {
+    position: relative;
+}
+
+.todos-dep {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 715px;
+    padding-left: 32px;
+
+    h3 {
+        color: var(--realce);
+        font-size: 16px;
+        font-family: "Poppins", sans-serif;
+    }
+
+    p {
+        color: var(--texto);
+        font-size: 16px;
+        font-family: "Poppins", sans-serif;
+    }
+}
+
+.dep1,
+.dep2,
+.dep3 {
+    background-color: var(--primario);
+    border-radius: 30px;
+    width: 565px;
+    height: 150px;
+    padding: 16px;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.dep2 {
+    margin-left: 148px;
+}
+
+.plant-depoimento {
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+}
+
+.full-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(assets/img-rodape.png);
+
+    .logo-footer {
+        margin-right: 240px;
+    }
+
+    .footer-info {
+        display: flex;
+        gap: 56px;
+
+        h3 {
+            color: var(--realce);
+            font-size: 24px;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        p {
+            color: var(--realce);
+            font-size: 16px;
+            font-family: "Poppins", sans-serif;
+            margin-top: 16px;
+            line-height: 30px;
+        }
+    }
+
+    .contato-footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
 
 /* @media (width <= 768px) {
     .nav-container {
